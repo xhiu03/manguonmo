@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /techtrend/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^admin$ admin/index.php [L]
